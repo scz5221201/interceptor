@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>status</title>
+</head>
+<body>
+
+<li th:if="${session.user!=null}">
+    <h3 th:text="'hello  '+${session.user.getUsername()}"></h3>
+</li>
+
+<p th:text="${msg}"></p>
+
+</body>
+</html>
